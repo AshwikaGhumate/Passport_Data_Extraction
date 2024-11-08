@@ -1,0 +1,134 @@
+/* Styling for the DocumentUploader container */
+.uploader-container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 470px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    text-align: center;  
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px; /* Space between uploader and results */
+}
+
+.title {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.file-input {
+    background-color: #2980b9;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+    text-align: left; 
+}
+
+.file-input:hover {
+    background-color: #3498db;
+}
+
+.loading-container {
+    margin-top: 20px;
+}
+
+.loading-message {
+    font-size: 18px;
+    color: #f39c12;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.progress-bar-container {
+    background-color: #dcdcdc;
+    border-radius: 5px;
+    height: 10px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.progress-bar {
+    background-color: #2980b9;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.progress-percentage {
+    font-size: 14px;
+    color: #2980b9;
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image-preview-container {
+    margin-top: 20px;
+}
+
+.preview-title {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+.image-preview {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    border: 1px solid #bdc3c7;
+}
+
+.error-message {
+    font-size: 18px;
+    color: #e74c3c;
+    font-weight: bold;
+    text-align: center;
+}
+
+.data-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.data-title {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.data-table td {
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+}
+
+.data-table td:first-child {
+    font-weight: bold;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

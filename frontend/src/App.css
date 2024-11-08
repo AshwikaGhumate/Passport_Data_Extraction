@@ -1,0 +1,251 @@
+/* General styles for the app */
+.app-container {
+  position: relative;  /* For positioning the pseudo-element */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  overflow: hidden;  /* Prevents the background from overflowing the container */
+  align-items: flex-end; /* Align content to the right */
+  text-align: right; /* Ensure all text aligns to the right */
+  padding-right:200px;
+}
+
+/* Apply the blurred background image using the ::before pseudo-element */
+.app-container::before {
+  content: "";
+  position: absolute; /* Position it relative to the .app-container */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./assets/background-img1.jpg'); 
+  background-size: cover;  /* Ensures the background image covers the entire container */
+  background-position: center center;  
+  background-attachment: fixed;  /* Keeps the image fixed while scrolling */
+  filter: blur(4px);  /* Apply blur effect to the background */
+  z-index: -1;  /* Ensures the background stays behind the content */
+  opacity: 1;  /* Ensures the background image is visible */
+  
+}
+
+/* Optional dark overlay for better contrast */
+.app-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);  /* Dark overlay for contrast */
+  z-index: -1;  /* Ensure overlay stays behind the content */
+}
+
+/* Styling for the header */
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #46bfdd;  /* Light color for text to contrast with dark overlay */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.passport-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.app-title {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.app-description {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+/* Styling for the DocumentUploader container */
+.uploader-container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.uploader-container:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.file-input {
+  background-color: #2980b9;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 350px;
+}
+
+.file-input:hover {
+  background-color: #3498db;
+}
+
+.loading-container {
+  margin-top: 20px;
+}
+
+.loading-message {
+  font-size: 18px;
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.progress-bar-container {
+  background-color: #dcdcdc;
+  border-radius: 5px;
+  height: 10px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  background-color: #2980b9;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.progress-percentage {
+  font-size: 14px;
+  color: #2980b9;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.image-preview-container {
+  margin-top: 20px;
+}
+
+.preview-title {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.image-preview {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+  border: 1px solid #bdc3c7;
+}
+
+.error-message {
+  font-size: 18px;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.data-container {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.data-title {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.data-table td {
+  padding: 12px;
+  border: 1px solid #bdc3c7;
+}
+
+.data-table td:first-child {
+  font-weight: bold;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .uploader-container {
+      width: 90%;
+      padding: 20px;
+  }
+
+  .file-input {
+      width: 100%;
+  }
+
+  .header-content {
+      flex-direction: column;  /* Stack the image and text vertically on smaller screens */
+      gap: 10px;
+  }
+
+  .passport-image {
+      width: 40px;  /* Adjust image size for smaller screens */
+      height: 40px;
+  }
+
+  .app-title {
+      font-size: 30px;  /* Slightly smaller title on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+      font-size: 24px;
+  }
+
+  .data-title {
+      font-size: 18px;
+  }
+}

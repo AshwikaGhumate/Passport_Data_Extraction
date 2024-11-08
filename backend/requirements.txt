@@ -1,0 +1,6 @@
+flask 
+passporteye 
+easyocr 
+python-dateutil 
+opencv-python 
+matplotlib
