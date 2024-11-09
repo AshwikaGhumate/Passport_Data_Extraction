@@ -9,22 +9,29 @@ This full-stack web application, built with React and Flask, allows users to upl
 ## Key Features
 
 **Image Upload**: Users can upload an image of their passport.
+
 **Data Extraction**: The backend uses MRZ (Machine Readable Zone) processing to extract key details.
+
 **Responsive UI**: Developed with React for a clean, user-friendly experience.
+
 **Backend Processing**: Built with Flask, integrating EasyOCR and PassportEye for image processing.
 
 
 ## Tech Stack
 
 **Frontend**: React, JavaScript, HTML, CSS
+
 **Backend**: Python Flask, Flask-CORS, EasyOCR, PassportEye
+
 **Image Processing**: OpenCV, EasyOCR for MRZ data extraction
 
 
 ## Installation
 
 **Prerequisites**
+
 Node.js: Required for React frontend
+
 Python 3.x: Required for Flask backend and dependencies
 
 **Steps**
