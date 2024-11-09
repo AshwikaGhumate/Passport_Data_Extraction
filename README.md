@@ -36,13 +36,13 @@ cd passport-data-extraction
    
    a. Navigate to the backend directory
      
-     cd backend
+         cd backend
 
    b. Set up and activate virtual environment
 
-     python -m venv venv
-
-     venv\Scripts\activate
+        python -m venv venv
+   
+        venv\Scripts\activate
 
   c. Install the required Python packages
     pip install -r requirements.txt
