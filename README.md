@@ -36,10 +36,12 @@ This full-stack web application, built with React and Flask, allows users to upl
 
 **Steps**
 1. Clone the Repository
+   
 git clone https://github.com/AshwikaGhumate/Passport_Data_Extraction.git
+
 cd passport-data-extraction
 
-2. Backend Setup
+3. Backend Setup
    
    a. Navigate to the backend directory
      
@@ -55,13 +57,13 @@ cd passport-data-extraction
 
         pip install -r requirements.txt
 
-3. Frontend Setup
+4. Frontend Setup
    
    a. Navigate to the frontend directory
 
         cd frontend 
 
-4. Run the Application
+5. Run the Application
 
    a. Start Backend: In the backend folder:
 
