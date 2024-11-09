@@ -33,6 +33,7 @@ git clone https://github.com/AshwikaGhumate/Passport_Data_Extraction.git
 cd passport-data-extraction
 
 2. Backend Setup
+   
   a. Navigate to the backend directory
      cd backend
 
