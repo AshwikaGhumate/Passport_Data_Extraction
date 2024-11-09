@@ -58,7 +58,7 @@ cd passport-data-extraction
 
    a. Start Backend: In the backend folder:
 
-       python app.py
+       flask run
    
    b. Start Frontend: In the frontend folder:
 
