@@ -44,25 +44,34 @@ cd passport-data-extraction
    
         venv\Scripts\activate
 
-  c. Install the required Python packages
-    pip install -r requirements.txt
+   c. Install the required Python packages
+
+        pip install -r requirements.txt
 
 3. Frontend Setup
-  a. Navigate to the frontend directory
-      cd frontend 
+   
+   a. Navigate to the frontend directory
+
+        cd frontend 
 
 4. Run the Application
-  a. Start Backend: In the backend folder:
-      python app.py
+
+   a. Start Backend: In the backend folder:
+
+       python app.py
    
-  b. Start Frontend: In the frontend folder:
-      npm start
+   b. Start Frontend: In the frontend folder:
+
+       npm start
       
-  c. The application should now be accessible at http://localhost:3000
+   c. The application should now be accessible at http://localhost:3000
   
 ## API Endpoints
 
-1. POST /extract-data
-  a. Description: Uploads a passport image for data extraction.
-  b. Request: Expects an image file (multipart/form-data).
-  c. Response: JSON object with extracted fields (name, passport_number, and expiration_date).
+**POST /extract-data**:
+
+  1. Description: Uploads a passport image for data extraction.
+
+  2. Request: Expects an image file (multipart/form-data).
+  
+  3. Response: JSON object with extracted fields (name, passport_number, and expiration_date).
