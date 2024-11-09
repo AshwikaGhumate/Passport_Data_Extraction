@@ -30,9 +30,9 @@ This full-stack web application, built with React and Flask, allows users to upl
 
 **Prerequisites**
 
-Node.js: Required for React frontend
-
-Python 3.x: Required for Flask backend and dependencies
+   Node.js: Required for React frontend
+   
+   Python 3.x: Required for Flask backend and dependencies
 
 **Steps**
 1. Clone the Repository
